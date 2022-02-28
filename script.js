@@ -9,16 +9,24 @@ const divisibleByTwo = function(number){
         console.log("true");
         return true;
     } else {
+        console.log("false");
         return false;
     }
 }
 
 const largestNum = function(arr){
-    help
+    console.log(arr);
+    let comp = 0;
+    for(let i = 0; i < arr.length; i++) {
+        if(arr[i] > comp){
+            comp = arr[i];
+        }
+    }
+    console.log(comp);
+    return comp;
 }
 
 
 firstLetterName("Valerie");
-divisibleByTwo(6);
 divisibleByTwo(17);
-largestNum(5, 8, 9, 45);
+largestNum([5, 8, 45, 9]);
