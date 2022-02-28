@@ -1,4 +1,3 @@
-console.log("test");
 
 const firstLetterName = function (name){
     alert("The name " + name + " starts with the letter " + name[0]);
@@ -6,27 +5,23 @@ const firstLetterName = function (name){
 
 const divisibleByTwo = function(number){
     if(number % 2 === 0){
-        console.log("true");
         return true;
     } else {
-        console.log("false");
         return false;
     }
 }
 
 const largestNum = function(arr){
-    console.log(arr);
-    let comp = 0;
+    let largestNumber = 0;
     for(let i = 0; i < arr.length; i++) {
-        if(arr[i] > comp){
-            comp = arr[i];
+        if(arr[i] > largestNumber){
+            largestNumber = arr[i];
         }
     }
-    console.log(comp);
-    return comp;
+    return largestNumber;
 }
 
 
 firstLetterName("Valerie");
-divisibleByTwo(17);
-largestNum([5, 8, 45, 9]);
+console.log("The number 17 is divisible by two: " + divisibleByTwo(17));
+console.log(largestNum([5, 8, 45, 9]));
